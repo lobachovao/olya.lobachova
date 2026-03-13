@@ -590,7 +590,7 @@ h1, h2, h3{
 .experience-left{
   position: relative;
   overflow: hidden;
-  min-height: 300px;
+  min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
