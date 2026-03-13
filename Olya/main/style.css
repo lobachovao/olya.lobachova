@@ -836,9 +836,6 @@ h1, h2, h3{
     grid-template-columns: 1fr;
   }
 
-  .experience-left{
-    min-height: 300px;
-  }
 }
 
 @media (max-width: 960px){
@@ -1019,6 +1016,9 @@ h1, h2, h3{
 
   .cta-section{
     padding: 24px 16px;
+  }
+   .experience-left{
+    min-height: 280px;
   }
 }
 
