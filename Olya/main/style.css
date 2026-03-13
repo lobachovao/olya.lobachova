@@ -1014,7 +1014,7 @@ h1, h2, h3{
   }
 
   .cta-section{
-    padding: 24px 16px;
+    padding: 24px 0;
   }
 
   .experience-left{
@@ -1063,4 +1063,8 @@ h1, h2, h3{
   .experience-left{
     min-height: 240px;
   }
+   .cta-container{
+  width: calc(100% - 24px);
+  padding: 2rem 1.25rem;
+}
 }
