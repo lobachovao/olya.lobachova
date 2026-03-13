@@ -590,7 +590,7 @@ h1, h2, h3{
 .experience-left{
   position: relative;
   overflow: hidden;
-  min-height: 100%;
+  min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -836,6 +836,9 @@ h1, h2, h3{
     grid-template-columns: 1fr;
   }
 
+  .experience-left{
+    min-height: 320px;
+  }
 }
 
 @media (max-width: 960px){
@@ -850,12 +853,8 @@ h1, h2, h3{
   }
 
   .hero-name{
-    width: 100%;
-  max-width: 100% !important;
-  margin: 0 auto;
-  font-size: clamp(5.2rem, 20vw, 7.4rem) !important;
-  line-height: .88;
-  text-align: center;
+    font-size: clamp(3rem, 6vw, 4.2rem);
+    max-width: 500px;
   }
 
   .hero-copy{
@@ -934,23 +933,23 @@ h1, h2, h3{
 
   .hero-content{
     margin-top: auto;
-  padding-bottom: 36px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 24px;
-  text-align: center;
-  width: 100%;
+    padding-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+    text-align: center;
+    width: 100%;
   }
 
- .hero-name{
+  .hero-name{
     width: 100%;
-  max-width: 100% !important;
-  margin: 0 auto;
-  font-size: clamp(5.2rem, 20vw, 7.4rem) !important;
-  line-height: .88;
-  text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: clamp(4rem, 16vw, 5.8rem);
+    line-height: .9;
+    text-align: center;
   }
 
   .hero-copy{
@@ -977,7 +976,7 @@ h1, h2, h3{
     justify-content: center;
     align-items: center;
     gap: 12px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: 0 auto;
   }
 
@@ -1017,7 +1016,8 @@ h1, h2, h3{
   .cta-section{
     padding: 24px 16px;
   }
-   .experience-left{
+
+  .experience-left{
     min-height: 280px;
   }
 }
@@ -1037,40 +1037,30 @@ h1, h2, h3{
     padding: 1.5rem 1rem;
   }
 
+  .hero-name{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: clamp(3rem, 11.5vw, 4.2rem);
+    line-height: .94;
+    text-align: center;
+  }
+
   .hero-buttons{
-    flex-direction: column;
-    gap: 14px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
   }
 
   .hero-btn{
-    width: 200px;
-    flex: 0 0 200px;
+    width: 148px;
+    flex: 0 0 148px;
+    font-size: 0.95rem;
   }
 
- .hero-name{
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  font-size: clamp(2.4rem, 13vw, 5.2rem);
-  line-height: .92;
-  text-align: center;
-}
-
-.hero-buttons{
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: nowrap;
-}
-
-.hero-btn{
-  width: 160px;
-  flex: 0 0 160px;
-}
-
-.hero-name{
-    font-size: 14vw !important;
-    line-height: 0.94 !important;
+  .experience-left{
+    min-height: 240px;
   }
 }
