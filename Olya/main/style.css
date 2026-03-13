@@ -1020,6 +1020,14 @@ h1, h2, h3{
   .cta-section{
     padding: 24px 16px;
   }
+
+   .experience-left{
+    min-height: 260px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 @media (max-width: 560px){
