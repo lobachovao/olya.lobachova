@@ -1018,6 +1018,54 @@ footer p{
   background:var(--accent);
 }
 
+.tools-block {
+  margin-top: 42px;
+}
+
+.tools-title {
+  font-family: 'Inria Serif', serif;
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 300;
+  margin-bottom: 22px;
+  color: #1f1a17;
+}
+
+.tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 100%;
+}
+
+.tool-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 18px;
+  min-height: 46px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(31, 26, 23, 0.12);
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f1a17;
+  line-height: 1.2;
+  white-space: nowrap;
+  box-shadow: 0 14px 34px rgba(31, 26, 23, 0.06);
+}
+
+@media (max-width: 900px) {
+  .tools-grid {
+    gap: 10px;
+  }
+
+  .tool-pill {
+    font-size: 13px;
+    padding: 12px 15px;
+  }
+}
+
 /* =============================
    RESPONSIVE
 ============================= */
