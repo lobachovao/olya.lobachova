@@ -1076,15 +1076,17 @@ footer p{
 }
 
 .tools-block {
-  margin-top: 42px;
+  margin-top: 70px;
+  width: 100%;
 }
 
 .tools-title {
   font-family: 'Inria Serif', serif;
-  font-size: clamp(28px, 3vw, 42px);
+  font-size: clamp(42px, 5vw, 76px);
   font-weight: 300;
-  margin-bottom: 22px;
+  line-height: 0.95;
   color: #1f1a17;
+  margin: 0 0 34px;
 }
 
 .tools-grid {
@@ -1098,13 +1100,12 @@ footer p{
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 13px 18px;
-  min-height: 46px;
+  padding: 14px 22px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(31, 26, 23, 0.12);
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(31, 26, 23, 0.1);
   font-family: 'Manrope', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   color: #1f1a17;
   line-height: 1.2;
@@ -1112,14 +1113,19 @@ footer p{
   box-shadow: 0 14px 34px rgba(31, 26, 23, 0.06);
 }
 
-@media (max-width: 900px) {
-  .tools-grid {
-    gap: 10px;
+@media (max-width: 768px) {
+  .tools-block {
+    margin-top: 48px;
+  }
+
+  .tools-title {
+    font-size: clamp(36px, 11vw, 52px);
+    margin-bottom: 24px;
   }
 
   .tool-pill {
-    font-size: 13px;
-    padding: 12px 15px;
+    padding: 12px 16px;
+    font-size: 14px;
   }
 }
 
